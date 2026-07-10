@@ -1,16 +1,6 @@
-name = "demo-plumbing-site"
-type = "javascript"
-account_id = "c1ebced89f0ab8555f5dc7c1766d8c55"
-workers_dev = true
-main = "dist/index.js"
+name = "plumbing-site"
 compatibility_date = "2026-07-10"
-
-[build]
-command = "npm run build"
-cwd = "./"
-
-[build.upload]
-format = "service-worker"
+pages_build_output_dir = ".next/static"
 
 [env.production.vars]
 NEXT_PUBLIC_BRAND_NAME = "Demo Plumbing Solutions"
