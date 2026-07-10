@@ -1,0 +1,19 @@
+name = "demo-plumbing-site"
+type = "javascript"
+account_id = "c1ebced89f0ab8555f5dc7c1766d8c55"
+workers_dev = true
+main = "./.next/server/index.js"
+
+[build]
+command = "npm run build"
+
+[env.production.vars]
+NEXT_PUBLIC_BRAND_NAME = "Demo Plumbing Solutions"
+NEXT_PUBLIC_PHONE_NUMBER = "(800) 555-9999"
+NEXT_PUBLIC_PHONE_TEL = "8005559999"
+NEXT_PUBLIC_SITE_URL = "https://demo-plumbing.workers.dev"
+NEXT_PUBLIC_NICHE = "Plumbing"
+NEXT_PUBLIC_NICHE_PLURAL = "Plumbers"
+NEXT_PUBLIC_NICHE_SINGULAR = "Plumber"
+NEXT_PUBLIC_SCHEMA_TYPE = "Plumber"
+NEXT_PUBLIC_CONTENT_SALT = "0"

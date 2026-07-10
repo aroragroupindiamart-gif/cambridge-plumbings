@@ -1,0 +1,25 @@
+{
+  "name": "niche-directory",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "next": "^15.3.3",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/node": "^20.0.0",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "postcss": "^8.5.0",
+    "tailwindcss": "latest",
+    "typescript": "~5.9.3"
+  }
+}

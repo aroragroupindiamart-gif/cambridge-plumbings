@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "service_name": "Emergency Repair",
+    "service_slug": "emergency-repair",
+    "service_tier": 1,
+    "base_keywords": ["emergency repair", "24 hour repair service", "urgent repair near me"]
+  },
+  {
+    "id": 2,
+    "service_name": "Inspection & Diagnosis",
+    "service_slug": "inspection-and-diagnosis",
+    "service_tier": 1,
+    "base_keywords": ["inspection service", "home inspection", "professional diagnosis"]
+  },
+  {
+    "id": 3,
+    "service_name": "Installation",
+    "service_slug": "installation",
+    "service_tier": 1,
+    "base_keywords": ["professional installation", "new installation service", "install near me"]
+  },
+  {
+    "id": 4,
+    "service_name": "Repair & Replacement",
+    "service_slug": "repair-and-replacement",
+    "service_tier": 2,
+    "base_keywords": ["repair and replacement", "fix and replace", "replacement service"]
+  },
+  {
+    "id": 5,
+    "service_name": "Maintenance",
+    "service_slug": "maintenance",
+    "service_tier": 2,
+    "base_keywords": ["routine maintenance", "preventive maintenance", "annual maintenance service"]
+  },
+  {
+    "id": 6,
+    "service_name": "Consultation",
+    "service_slug": "consultation",
+    "service_tier": 3,
+    "base_keywords": ["free consultation", "expert consultation", "service consultation near me"]
+  }
+]
