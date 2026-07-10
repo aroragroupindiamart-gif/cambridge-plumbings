@@ -1,6 +1,8 @@
 name = "plumbing-site"
 compatibility_date = "2026-07-10"
-pages_build_output_dir = ".next/static"
+compatibility_flags = ["nodejs_compat"]
+main = ".open-next/worker.js"
+assets = { directory = ".open-next/assets", binding = "ASSETS", not_found_handling = "none" }
 
 [env.production.vars]
 NEXT_PUBLIC_BRAND_NAME = "Demo Plumbing Solutions"
