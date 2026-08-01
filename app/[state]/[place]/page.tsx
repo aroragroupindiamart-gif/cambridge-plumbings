@@ -7,13 +7,7 @@ import Footer from "@/components/Footer";
 
 export const revalidate = 3600;
 
-export async function generateStaticParams() {
-  const locations = await getAllLocations();
-  return locations.map((loc) => ({
-    state: loc.state_code.toLowerCase(),
-    place: loc.place_slug,
-  }));
-}
+export const dynamicParams = true;
 
 interface Props {
   params: Promise<{ state: string; place: string }>;
