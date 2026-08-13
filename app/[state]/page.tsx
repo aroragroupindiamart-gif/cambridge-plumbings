@@ -7,7 +7,10 @@ import Footer from "@/components/Footer";
 
 export const revalidate = 3600;
 
-export const dynamicParams = true;
+export async function generateStaticParams() {
+  const states = await getStates();
+  return states.map((s) => ({ state: s.state_code.toLowerCase() }));
+}
 
 interface Props {
   params: Promise<{ state: string }>;
