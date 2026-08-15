@@ -1,4 +1,4 @@
-import { getStates } from "@/lib/data";
+import { getDripStates } from "@/lib/data";
 import { SITE_URL } from "@/lib/config";
 
 export const revalidate = 3600;
@@ -6,7 +6,7 @@ export const revalidate = 3600;
 const MAX_URLS = 50000;
 
 export async function GET() {
-  const states = await getStates();
+  const states = await getDripStates();
   const today = new Date().toISOString().split("T")[0];
 
   const entries: string[] = [];

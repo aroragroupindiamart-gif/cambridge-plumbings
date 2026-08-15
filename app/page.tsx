@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { getStates } from "@/lib/data";
+import { getDripStates } from "@/lib/data";
 import { BRAND_NAME, PHONE_NUMBER, PHONE_TEL, NICHE, NICHE_PLURAL } from "@/lib/config";
 import Footer from "@/components/Footer";
 
 export const revalidate = 3600;
 
 export default async function HomePage() {
-  const states = await getStates();
+  const states = await getDripStates();
   const totalPages     = states.reduce((sum, s) => sum + s.page_count, 0);
   const totalLocations = states.reduce((sum, s) => sum + s.location_count, 0);
 
