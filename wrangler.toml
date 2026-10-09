@@ -4,6 +4,9 @@ compatibility_flags = ["nodejs_compat"]
 main = ".open-next/worker.js"
 assets = { directory = ".open-next/assets", binding = "ASSETS", not_found_handling = "none" }
 
+[cache]
+enabled = true
+
 [env.production.vars]
 NEXT_PUBLIC_BRAND_NAME = "Demo Plumbing Solutions"
 NEXT_PUBLIC_PHONE_NUMBER = "(800) 555-9999"
