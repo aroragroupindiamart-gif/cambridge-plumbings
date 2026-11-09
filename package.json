@@ -8,7 +8,10 @@
     "build:cf": "opennextjs-cloudflare build",
     "deploy": "wrangler deploy",
     "start": "next start -p 3000",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test:boilerplate": "node scripts/measure-boilerplate.mjs",
+    "test:audit": "node scripts/audit-out.mjs",
+    "test:quality": "node scripts/audit-out.mjs && node scripts/measure-boilerplate.mjs"
   },
   "dependencies": {
     "next": "^15.3.3",
