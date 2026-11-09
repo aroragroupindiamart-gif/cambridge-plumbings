@@ -5,13 +5,14 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
-    "build:cf": "opennextjs-cloudflare build",
+    "build:cf": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion",
     "deploy": "wrangler deploy",
     "start": "next start -p 3000",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test:boilerplate": "node scripts/measure-boilerplate.mjs",
     "test:audit": "node scripts/audit-out.mjs",
-    "test:quality": "node scripts/audit-out.mjs && node scripts/measure-boilerplate.mjs"
+    "test:quality": "node scripts/audit-out.mjs && node scripts/measure-boilerplate.mjs",
+    "build:worker": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion"
   },
   "dependencies": {
     "next": "^15.3.3",
@@ -27,6 +28,5 @@
     "postcss": "^8.5.0",
     "tailwindcss": "latest",
     "typescript": "~5.9.3"
-  },
-  "packageManager": "pnpm@9.15.4"
+  }
 }
